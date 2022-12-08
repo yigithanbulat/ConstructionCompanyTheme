@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="tr-TR">
+
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <title>Kurumsal Template</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="vendors/linericon/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+  <link rel="stylesheet" href="vendors/animate-css/animate.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script nonce="692c4109-1ac4-4edf-ac60-f4e9b71e6b0f">
+    (function (w, d) {
+      ! function (cM, cN, cO, cP) {
+        cM.zarazData = cM.zarazData || {};
+        cM.zarazData.executed = [];
+        cM.zaraz = {
+          deferred: [],
+          listeners: []
+        };
+        cM.zaraz.q = [];
+        cM.zaraz._f = function (cQ) {
+          return function () {
+            var cR = Array.prototype.slice.call(arguments);
+            cM.zaraz.q.push({
+              m: cQ,
+              a: cR
+            })
+          }
+        };
+        for (const cS of ["track", "set", "debug"]) cM.zaraz[cS] = cM.zaraz._f(cS);
+        cM.zaraz.init = () => {
+          var cT = cN.getElementsByTagName(cP)[0],
+            cU = cN.createElement(cP),
+            cV = cN.getElementsByTagName("title")[0];
+          cV && (cM.zarazData.t = cN.getElementsByTagName("title")[0].text);
+          cM.zarazData.x = Math.random();
+          cM.zarazData.w = cM.screen.width;
+          cM.zarazData.h = cM.screen.height;
+          cM.zarazData.j = cM.innerHeight;
+          cM.zarazData.e = cM.innerWidth;
+          cM.zarazData.l = cM.location.href;
+          cM.zarazData.r = cN.referrer;
+          cM.zarazData.k = cM.screen.colorDepth;
+          cM.zarazData.n = cN.characterSet;
+          cM.zarazData.o = (new Date).getTimezoneOffset();
+          if (cM.dataLayer)
+            for (const cZ of Object.entries(Object.entries(dataLayer).reduce(((c_, da) => ({
+                ...c_[1],
+                ...da[1]
+              }))))) zaraz.set(cZ[0], cZ[1], {
+              scope: "page"
+            });
+          cM.zarazData.q = [];
+          for (; cM.zaraz.q.length;) {
+            const db = cM.zaraz.q.shift();
+            cM.zarazData.q.push(db)
+          }
+          cU.defer = !0;
+          for (const dc of [localStorage, sessionStorage]) Object.keys(dc || {}).filter((de => de.startsWith(
+            "_zaraz_"))).forEach((dd => {
+            try {
+              cM.zarazData["z_" + dd.slice(7)] = JSON.parse(dc.getItem(dd))
+            } catch {
+              cM.zarazData["z_" + dd.slice(7)] = dc.getItem(dd)
+            }
+          }));
+          cU.referrerPolicy = "origin";
+          cU.src = "../../cdn-cgi/zaraz/sd0d9.js?z=" + btoa(encodeURIComponent(JSON.stringify(cM.zarazData)));
+          cT.parentNode.insertBefore(cU, cT)
+        };
+        ["complete", "interactive"].includes(cN.readyState) ? zaraz.init() : cM.addEventListener("DOMContentLoaded",
+          zaraz.init)
+      }(w, d, 0, "script");
+    })(window, document);
+  </script>
+</head>
+
+<body>
+
+  <header class="header_area">
+    <div class="top_menu">
+      <div class="container">
+        <div class="top_inner">
+          <div class="float-left">
+            <a href="contact.html">Ofisimizi Ziyaret Edin</a>
+            <a href="contact.html">Hemen İletişime Geçin</a>
+          </div>
+          <div class="float-right">
+            <ul class="list header_socila">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main_menu" id="mainNav">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+
+          <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""><img src="img/logo-2.png"
+              alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav ml-auto">
+              <li class="nav-item active"><a class="nav-link" href="index.html">Anasayfa</a></li>
+              <li class="nav-item"><a class="nav-link" href="about-us.html">Hakkımızda</a></li>
+              <li class="nav-item"><a class="nav-link" href="projects.html">Projeler</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Galeri</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">İletişim</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="banner_area">
+    <div class="banner_inner d-flex align-items-center">
+      <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background="">
+      </div>
+      <div class="container">
+        <div class="banner_content text-center">
+          <h2>İLETİŞİM</h2>
+          <div class="page_link">
+            <a href="index.html">Anasayfa</a>
+            <a href="contact.html">İLETİŞİM</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact_area p_120">
+    <div class="container">
+      <div id="mapBox" class="mapBox" data-lat="40.701083" data-lon="-74.1522848" data-zoom="13"
+        data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia." data-mlat="40.701083"
+        data-mlon="-74.1522848">
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="contact_info">
+            <div class="info_item">
+              <i class="lnr lnr-home"></i>
+              <h6>Adatepe Mahallesi 3. Sokak 57-59</h6>
+              <p>İzmir-Türkiye</p>
+            </div>
+            <div class="info_item">
+              <i class="lnr lnr-phone-handset"></i>
+              <h6><a href="#">+90 555 555 55 55</a></h6>
+              <p>Pazartesi-Cuma 09.00-18.00</p>
+            </div>
+            <div class="info_item">
+              <i class="lnr lnr-envelope"></i>
+              <h6><a href="#"><span class="__cf_email__"
+                    data-cfemail="bfcccacfcfd0cdcbffdcd0d3d0cdd3d6dd91dcd0d2">iletisim@AnatolyaNetwork.com</span></a>
+              </h6>
+              <p>Bizimle İletişime geçin</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <form class="row contact_form" action="https://preview.colorlib.com/theme/woodrox/contact_process.php"
+            method="post" id="contactForm" novalidate="novalidate">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Adınız Soyadınız">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Mail Adresiniz">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Konu">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <textarea class="form-control" name="message" id="message" rows="1" placeholder="Mesajınız"></textarea>
+              </div>
+            </div>
+            <div class="col-md-12 text-right">
+              <button type="submit" value="submit" class="btn submit_btn">Gönder</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer_area p_120">
+    <div class="container">
+      <div class="row footer_inner">
+        <div class="col-lg-5 col-sm-6">
+          <aside class="f_widget ab_widget">
+            <div class="f_title">
+              <h3>Hakkımızda</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ipsum fugiat! Dignissimos neque id
+              reiciendis voluptatem consequatur quod quis, temporibus a veritatis libero sit veniam eaque nam eos ea
+              illum?</p>
+            <p>
+              Copyright &copy;<script>
+                document.write(new Date().getFullYear());
+              </script> All rights reserved | This template is made with <i class="fa fa-heart-o"
+                aria-hidden="true"></i> by <a href="https://AnatolyaNetwork.com/" target="_blank">AnatolyaNetwork</a>
+            </p>
+          </aside>
+        </div>
+        <div class="col-lg-5 col-sm-6">
+          <aside class="f_widget news_widget">
+            <div class="f_title">
+              <h3>Bülten</h3>
+            </div>
+            <p>En son trendlerimizle güncel kalın</p>
+            <div id="mc_embed_signup">
+              <form target="_blank"
+                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                method="get" class="subscribe_form relative">
+                <div class="input-group d-flex flex-row">
+                  <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Mail Adresiniz '" required="" type="email">
+                  <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>
+                </div>
+                <div class="mt-10 info"></div>
+              </form>
+            </div>
+          </aside>
+        </div>
+        <div class="col-lg-2">
+          <aside class="f_widget social_widget">
+            <div class="f_title">
+              <h3>Takipte Kalın</h3>
+            </div>
+            <p>Hesaplarımız</p>
+            <ul class="list">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div id="success" class="modal modal-message fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-close"></i>
+          </button>
+          <h2>Başarılı</h2>
+          <p>Mesajınız Başarıyla alınmıştır.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="error" class="modal modal-message fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-close"></i>
+          </button>
+          <h2>UPSS!!</h2>
+          <p> Bir Sorunla Karşılaştık!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/stellar.js"></script>
+  <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+  <script src="vendors/isotope/isotope-min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+  <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+
+  <script src="js/jquery.form.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/contact.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+  <script src="js/gmaps.min.js"></script>
+  <script src="js/theme.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+  </script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+    integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+    data-cf-beacon='{"rayId":"7761de469c5f92d8","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}'
+    crossorigin="anonymous"></script>
+</body>
+
+
+</html>

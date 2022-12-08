@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="tr-TR">
+
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <title>Kurumsal Template</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="vendors/linericon/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+  <link rel="stylesheet" href="vendors/animate-css/animate.css">
+  <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script nonce="8c841026-f38a-4703-9f3c-f56c73c12474">
+    (function (w, d) {
+      ! function (cM, cN, cO, cP) {
+        cM.zarazData = cM.zarazData || {};
+        cM.zarazData.executed = [];
+        cM.zaraz = {
+          deferred: [],
+          listeners: []
+        };
+        cM.zaraz.q = [];
+        cM.zaraz._f = function (cQ) {
+          return function () {
+            var cR = Array.prototype.slice.call(arguments);
+            cM.zaraz.q.push({
+              m: cQ,
+              a: cR
+            })
+          }
+        };
+        for (const cS of ["track", "set", "debug"]) cM.zaraz[cS] = cM.zaraz._f(cS);
+        cM.zaraz.init = () => {
+          var cT = cN.getElementsByTagName(cP)[0],
+            cU = cN.createElement(cP),
+            cV = cN.getElementsByTagName("title")[0];
+          cV && (cM.zarazData.t = cN.getElementsByTagName("title")[0].text);
+          cM.zarazData.x = Math.random();
+          cM.zarazData.w = cM.screen.width;
+          cM.zarazData.h = cM.screen.height;
+          cM.zarazData.j = cM.innerHeight;
+          cM.zarazData.e = cM.innerWidth;
+          cM.zarazData.l = cM.location.href;
+          cM.zarazData.r = cN.referrer;
+          cM.zarazData.k = cM.screen.colorDepth;
+          cM.zarazData.n = cN.characterSet;
+          cM.zarazData.o = (new Date).getTimezoneOffset();
+          if (cM.dataLayer)
+            for (const cZ of Object.entries(Object.entries(dataLayer).reduce(((c_, da) => ({
+                ...c_[1],
+                ...da[1]
+              }))))) zaraz.set(cZ[0], cZ[1], {
+              scope: "page"
+            });
+          cM.zarazData.q = [];
+          for (; cM.zaraz.q.length;) {
+            const db = cM.zaraz.q.shift();
+            cM.zarazData.q.push(db)
+          }
+          cU.defer = !0;
+          for (const dc of [localStorage, sessionStorage]) Object.keys(dc || {}).filter((de => de.startsWith(
+            "_zaraz_"))).forEach((dd => {
+            try {
+              cM.zarazData["z_" + dd.slice(7)] = JSON.parse(dc.getItem(dd))
+            } catch {
+              cM.zarazData["z_" + dd.slice(7)] = dc.getItem(dd)
+            }
+          }));
+          cU.referrerPolicy = "origin";
+          cU.src = "../../cdn-cgi/zaraz/sd0d9.js?z=" + btoa(encodeURIComponent(JSON.stringify(cM.zarazData)));
+          cT.parentNode.insertBefore(cU, cT)
+        };
+        ["complete", "interactive"].includes(cN.readyState) ? zaraz.init() : cM.addEventListener("DOMContentLoaded",
+          zaraz.init)
+      }(w, d, 0, "script");
+    })(window, document);
+  </script>
+</head>
+
+<body>
+
+  <header class="header_area">
+    <div class="top_menu">
+      <div class="container">
+        <div class="top_inner">
+          <div class="float-left">
+            <a href="contact.html">Ofisimizi Ziyaret Edin</a>
+            <a href="contact.html">Hemen İletişime Geçin</a>
+          </div>
+          <div class="float-right">
+            <ul class="list header_socila">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main_menu" id="mainNav">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+
+          <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""><img src="img/logo-2.png"
+              alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav ml-auto">
+              <li class="nav-item active"><a class="nav-link" href="index.html">Anasayfa</a></li>
+              <li class="nav-item"><a class="nav-link" href="about-us.html">Hakkımızda</a></li>
+              <li class="nav-item"><a class="nav-link" href="projects.html">Projeler</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Galeri</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">İletişim</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="home_banner_area">
+    <div class="banner_inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="banner_content">
+              <h2>ŞIK YAŞAM İÇİN <br />HASSAS KONSEPT TASARIMI</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nesciunt quam consectetur quibusdam ea
+                pariatur beatae similique facere necessitatibus iusto adipisci ab nemo vel numquam atque laudantium,
+                suscipit praesentium maiores?</p>
+              <a class="banner_btn" href="#">İletişime Geçiniz</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="home_right_box">
+              <div class="home_item">
+                <i class="flaticon-sofa"></i>
+              </div>
+              <div class="home_item">
+                <i class="flaticon-bed"></i>
+              </div>
+              <div class="home_item">
+                <i class="flaticon-computer"></i>
+              </div>
+              <div class="home_item">
+                <i class="flaticon-mirror"></i>
+              </div>
+              <div class="home_item">
+                <i class="flaticon-closet"></i>
+              </div>
+              <div class="home_item">
+                <i class="flaticon-kitchen"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="furniture_area p_120">
+    <div class="container">
+      <div class="main_title">
+        <h2>EN POPÜLER Çizimlerimiz</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+        </p>
+      </div>
+      <div class="furniture_inner row">
+        <div class="col-lg-4">
+          <div class="furniture_item">
+            <img class="img-fluid" src="img/furniture/furniture-1.jpg" alt="">
+            <h4>Başlık</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est saepe ad debitis voluptatem quibusdam
+              dolores ut, laborum explicabo perspiciatis autem adipisci dolorem, voluptas perferendis sunt cum delectus.
+              Quasi, molestiae hic?</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="furniture_item">
+            <img class="img-fluid" src="img/furniture/furniture-2.jpg" alt="">
+            <h4>Başlık</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quod, est cum mollitia error, earum dicta
+              quia vitae eveniet perspiciatis atque sint nemo pariatur, voluptatibus laborum. Obcaecati necessitatibus
+              inventore maiores!</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="furniture_item">
+            <img class="img-fluid" src="img/furniture/furniture-3.jpg" alt="">
+            <h4>Başlık</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, veniam adipisci illum, ut hic quia,
+              recusandae officiis sequi non saepe reprehenderit unde. Id exercitationem odio rerum officia provident
+              voluptate quae.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="projects_area">
+    <div class="row m0">
+      <div class="projects_item wd_18">
+        <img src="img/projects/projects-1.jpg" alt="">
+        <div class="hover">
+          <h4>PROJE BAŞLIK</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio sunt perspiciatis illum placeat, corporis
+            quod sit at maxime iste dignissimos suscipit provident hic natus aperiam nobis doloremque dolores ratione
+            in!</p>
+        </div>
+      </div>
+      <div class="projects_item wd_18">
+        <img src="img/projects/projects-2.jpg" alt="">
+        <div class="hover">
+          <h4>PROJE BAŞLIK</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel aspernatur repellendus quidem nemo alias
+            cumque non quod. Quod dolore, doloremque labore officia repudiandae facere repellat sequi quos, aperiam
+            natus consectetur!</p>
+        </div>
+      </div>
+      <div class="projects_item wd_44">
+        <img src="img/projects/projects-3.jpg" alt="">
+        <div class="hover">
+          <h4>PROJE BAŞLIK</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, pariatur tempora voluptate minus, est enim
+            amet ea numquam et vitae officiis? Eaque optio consequatur quibusdam aliquam adipisci impedit harum sint.
+          </p>
+        </div>
+      </div>
+      <div class="projects_item wd_18">
+        <img src="img/projects/projects-4.jpg" alt="">
+        <div class="hover">
+          <h4>PROJE BAŞLIK</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsum eius nisi commodi nihil numquam
+            fuga tempore, consectetur assumenda illo. Cumque sit enim veritatis tenetur quo illum tempore ipsum aliquid.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="feature_area p_120">
+    <div class="container">
+      <div class="main_title">
+        <h2>BİZİ BENZERSİZ KILAN ÖZELLİKLER</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      </div>
+      <div class="row feature_inner">
+        <div class="col-lg-4 col-md-6">
+          <div class="feature_item">
+            <h4><i class="lnr lnr-user"></i>Özellik Adı</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, dicta ullam nihil quo earum ducimus
+              soluta quaerat corrupti voluptate ea possimus aut doloribus, inventore accusantium dolore quibusdam id
+              repudiandae consequuntur!</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature_item">
+            <h4><i class="lnr lnr-license"></i>Özellik Adı</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, dicta ullam nihil quo earum ducimus
+              soluta quaerat corrupti voluptate ea possimus aut doloribus, inventore accusantium dolore quibusdam id
+              repudiandae consequuntur!</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature_item">
+            <h4><i class="lnr lnr-phone"></i>Özellik Adı</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, dicta ullam nihil quo earum ducimus
+              soluta quaerat corrupti voluptate ea possimus aut doloribus, inventore accusantium dolore quibusdam id
+              repudiandae consequuntur!</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature_item">
+            <h4><i class="lnr lnr-rocket"></i>Özellik Adı</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, dicta ullam nihil quo earum ducimus
+              soluta quaerat corrupti voluptate ea possimus aut doloribus, inventore accusantium dolore quibusdam id
+              repudiandae consequuntur!</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature_item">
+            <h4><i class="lnr lnr-diamond"></i>Özellik Adı</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, dicta ullam nihil quo earum ducimus
+              soluta quaerat corrupti voluptate ea possimus aut doloribus, inventore accusantium dolore quibusdam id
+              repudiandae consequuntur!</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature_item">
+            <h4><i class="lnr lnr-bubble"></i>Özellik Adı</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, dicta ullam nihil quo earum ducimus
+              soluta quaerat corrupti voluptate ea possimus aut doloribus, inventore accusantium dolore quibusdam id
+              repudiandae consequuntur!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="impress_area p_120">
+    <div class="container">
+      <div class="impress_inner text-center">
+        <h2>KALİTELİ VE UYGUN <br />FİYATLI BİR MOBİLYA MI ARIYORSUNUZ ?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta soluta iste sunt minus, ex nihil non
+          inventore mollitia, architecto consequuntur sit hic labore facere quibusdam beatae cupiditate possimus ad.
+          Reprehenderit?</p>
+        <a class="main_btn" href="gallery.html">Galeri</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="clients_logo_area p_120">
+    <div class="container">
+      <div class="clients_slider owl-carousel">
+        <div class="item">
+          <img src="img/clients-logo/c-logo-1.png" alt="">
+        </div>
+        <div class="item">
+          <img src="img/clients-logo/c-logo-2.png" alt="">
+        </div>
+        <div class="item">
+          <img src="img/clients-logo/c-logo-3.png" alt="">
+        </div>
+        <div class="item">
+          <img src="img/clients-logo/c-logo-4.png" alt="">
+        </div>
+        <div class="item">
+          <img src="img/clients-logo/c-logo-5.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer_area p_120">
+    <div class="container">
+      <div class="row footer_inner">
+        <div class="col-lg-5 col-sm-6">
+          <aside class="f_widget ab_widget">
+            <div class="f_title">
+              <h3>Hakkımızda</h3>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil iste omnis obcaecati? Ratione harum
+              aliquam eum eius consequatur, accusamus repellat recusandae earum quos voluptas minima itaque
+              reprehenderit, ad, minus ipsum?</p>
+            <p>
+              Copyright &copy;<script>
+                document.write(new Date().getFullYear());
+              </script> All rights reserved | This template is made with <i class="fa fa-heart-o"
+                aria-hidden="true"></i> by <a href="https://AnatolyaNetwork.com/" target="_blank">AnatolyaNetwork</a>
+            </p>
+          </aside>
+        </div>
+        <div class="col-lg-5 col-sm-6">
+          <aside class="f_widget news_widget">
+            <div class="f_title">
+              <h3>Bülten</h3>
+            </div>
+            <p>En son trendlerimizle güncel kalın</p>
+            <div id="mc_embed_signup">
+              <form target="_blank"
+                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                method="get" class="subscribe_form relative">
+                <div class="input-group d-flex flex-row">
+                  <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Mail Adresiniz '" required="" type="email">
+                  <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>
+                </div>
+                <div class="mt-10 info"></div>
+              </form>
+            </div>
+          </aside>
+        </div>
+        <div class="col-lg-2">
+          <aside class="f_widget social_widget">
+            <div class="f_title">
+              <h3>Takipte Kalın</h3>
+            </div>
+            <p>Hesaplarımız</p>
+            <ul class="list">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/stellar.js"></script>
+  <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+  <script src="vendors/isotope/isotope-min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+  <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+  <script src="js/mail-script.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+  <script src="js/gmaps.min.js"></script>
+  <script src="js/theme.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+  </script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+    integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+    data-cf-beacon='{"rayId":"7761de25aef992d8","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}'
+    crossorigin="anonymous"></script>
+</body>
+
+
+</html>
